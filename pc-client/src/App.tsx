@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
   BrowserRouter as Router,
   Switch,
@@ -10,7 +10,12 @@ import { Services, ServiceDetail, People, PersonDetail } from './pages';
 
 import './App.css';
 
-function App() {
+const App = () => {
+  
+  useEffect(() => {
+    document.title = 'Planning Center Lite';
+  }, []);
+
   return (
     <Router>
       <div className="App">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Person } from '../interfaces';
+import { Link } from 'react-router-dom';
 
 interface PeopleTableProps {
   people: Person[];
@@ -7,13 +8,14 @@ interface PeopleTableProps {
 
 export const PeopleTable: React.FC<PeopleTableProps> = ({ people }) => {
   return (
-    <table>
+    <table className="peopleTable">
       <thead>
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
           <th>Email</th>
           <th>Phone Number</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -23,6 +25,7 @@ export const PeopleTable: React.FC<PeopleTableProps> = ({ people }) => {
             <td>{person.lastName}</td>
             <td>{person.email}</td>
             <td>{person.phone}</td>
+            <td><Link to={`/people/${person.id}`}><button>View</button></Link></td>
           </tr>
         )}
       </tbody>

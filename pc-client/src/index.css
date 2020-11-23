@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import './styles/ServiceCard.css';
+@import './styles/Services.css';
+@import './styles/ServiceForm.css';
+@import './styles/PeopleTable.css';
+
+input {
+  width: 50%;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 4px;
+  border: none;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ServicesResponse, Service } from '../interfaces';
-import { ServiceList } from '../components';
+import { ServiceForm, ServiceList } from '../components';
 
 export const Services: React.FC = () => {
   const [services, setServices] = useState<{ [key: string]: Service }>({});
@@ -30,11 +30,14 @@ export const Services: React.FC = () => {
   }, []);
 
   return (
-    <>
-      {!!Object.keys(services)
-        ? <ServiceList services={Object.values(services)} />
-        : <div>No services found.</div>
-      }
-    </>
+    <div className="services">
+      <div>
+        {!!Object.keys(services)
+          ? <ServiceList services={Object.values(services)} />
+          : <div>No services found.</div>
+        }
+      </div>
+      {/* <ServiceForm /> */}
+    </div>
   )
 }

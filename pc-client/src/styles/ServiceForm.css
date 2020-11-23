@@ -1,0 +1,12 @@
+.serviceForm {
+  text-align: left;
+}
+
+.serviceForm label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.serviceForm div {
+  margin-bottom: 16px;
+}

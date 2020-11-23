@@ -1,0 +1,17 @@
+.peopleTable {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.peopleTable td, .peopleTable th {
+  padding: 8px 24px 8px 12px;
+}
+
+.peopleTable tr:nth-child(even) {
+  background-color: #414a5a;
+}
+
+.peopleTable button {
+  cursor: pointer;
+}

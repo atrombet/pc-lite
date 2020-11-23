@@ -8,9 +8,11 @@ interface ServiceCardProps {
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
-    <Link to={`/services/${service.id}`}>
-      <h2>{service.datetime.toDateString()} - {service.title}</h2>
-      <h3>{service.datetime.toLocaleTimeString()}</h3>
-    </Link>
+    <div className="serviceCard">
+      <Link to={`/services/${service.id}`}>
+        <h2>{service.datetime.toDateString()} - {service.title}</h2>
+        <h3>{service.datetime.toLocaleTimeString()}</h3>
+      </Link>
+    </div>
   )
 }

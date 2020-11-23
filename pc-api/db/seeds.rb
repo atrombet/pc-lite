@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 services = Service.create([
   {
-    title: "Matthew 16",
+    title: "Service Title 1",
     datetime: "2020-11-22 09:00:00"
   },
   {
-    title: "What Do You Crave?",
+    title: "Service Title 2",
     datetime: "2020-11-29 09:00:00"
   }
 ])
